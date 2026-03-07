@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Syntra AI</title>
+  <meta name="description" content="Privacy Policy for Syntra AI — AI automation for small businesses in Spain. GDPR compliant.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Privacy Policy — Syntra AI">
+  <meta property="og:description" content="Privacy Policy for Syntra AI Instagram integration and AI automation services.">
+  <meta property="og:url" content="https://syntra.ai/privacy">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Syntra AI">
+  <link rel="canonical" href="https://syntra.ai/privacy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "url": "https://syntra.ai/privacy",
+    "description": "Privacy Policy for Syntra AI services and Instagram API integration",
+    "publisher": {
+      "@type": "Organization",
+      "name": "t10 Solutions SL",
+      "alternateName": "Syntra AI",
+      "url": "https://syntra.ai",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@syntra.ai",
+        "contactType": "Data Protection"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valencia",
+        "addressCountry": "ES"
+      }
+    },
+    "datePublished": "2026-03-07",
+    "dateModified": "2026-03-07",
+    "inLanguage": ["es", "en"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0D1117;
+      --surface: #0F1520;
+      --teal: #00F5A0;
+      --purple: #7C3AED;
+      --text: #E8EDF5;
+      --text-dim: #7A8BA0;
+      --border: rgba(0,245,160,0.1);
+      --font-heading: 'DM Serif Display', Georgia, serif;
+      --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13,17,23,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--teal);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 18px;
+      color: var(--bg);
+      font-weight: 700;
+    }
+    .logo-text {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text);
+    }
+    .logo-text span { color: var(--text-dim); font-weight: 400; margin-left: 8px; }
+
+    .lang-switch {
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 3px;
+      border: 1px solid var(--border);
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-dim);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--teal);
+      color: var(--bg);
+    }
+    .lang-btn:hover:not(.active) { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(32px, 5vw, 48px);
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 6px; }
+    .hero-meta .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+
+    /* Layout */
+    .layout {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      padding: 48px 24px 96px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      align-self: start;
+    }
+    .sidebar nav { display: flex; flex-direction: column; gap: 2px; }
+    .sidebar a {
+      display: block;
+      padding: 8px 16px;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      border-left: 2px solid transparent;
+      border-radius: 0 6px 6px 0;
+      transition: all 0.2s;
+    }
+    .sidebar a:hover { color: var(--text); background: rgba(0,245,160,0.04); }
+    .sidebar a.active {
+      color: var(--teal);
+      border-left-color: var(--teal);
+      background: rgba(0,245,160,0.06);
+      font-weight: 500;
+    }
+
+    /* Content */
+    .content section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .content section:last-child { border-bottom: none; }
+
+    .content h2 {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .content h3 {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 24px 0 12px;
+    }
+    .content p {
+      margin-bottom: 16px;
+      color: var(--text);
+      font-weight: 300;
+    }
+    .content ul, .content ol {
+      margin: 12px 0 20px 24px;
+      color: var(--text);
+      font-weight: 300;
+    }
+    .content li { margin-bottom: 8px; }
+    .content li strong { font-weight: 500; color: var(--text); }
+
+    .content a { color: var(--teal); text-decoration: none; }
+    .content a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .highlight-box.contact {
+      border-color: rgba(0,245,160,0.25);
+    }
+    .highlight-box p { margin-bottom: 8px; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      background: rgba(0,245,160,0.08);
+      border: 1px solid rgba(0,245,160,0.2);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table th {
+      color: var(--text-dim);
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .data-table td { color: var(--text); font-weight: 300; }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+    .footer a { color: var(--teal); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 8px; }
+
+    /* Language toggle */
+    [lang="en"] { display: none; }
+    body.en [lang="en"] { display: block; }
+    body.en [lang="es"] { display: none; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .layout { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { display: none; }
+      .hero { padding: 40px 20px 32px; }
+      .layout { padding: 32px 20px 64px; }
+    }
+
+    /* Print */
+    @media print {
+      body { background: #fff; color: #111; }
+      .header, .sidebar, .lang-switch, .footer { display: none; }
+      .content section { border-bottom: 1px solid #ddd; }
+      .content h2 { color: #111; }
+      .content p, .content li { color: #333; }
+      .highlight-box { background: #f5f5f5; border-color: #ddd; }
+      .hero { padding: 20px 0; }
+      .hero h1 { font-size: 28px; color: #111; }
+      .layout { display: block; padding: 0; }
+      [lang="en"] { display: block !important; }
+      [lang="es"] { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="https://syntra.ai" class="logo">
+      <div class="logo-mark">S</div>
+      <div class="logo-text">Syntra AI <span>Privacy Policy</span></div>
+    </a>
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setLang('es')" id="btn-es">ES</button>
+      <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div lang="es">
+    <h1>Politica de Privacidad</h1>
+    <div class="hero-meta">
+      <span><span class="dot"></span> Ultima actualizacion: 7 de marzo de 2026</span>
+      <span><span class="dot"></span> Version 1.0</span>
+      <span><span class="dot"></span> Proxima revision: marzo 2027</span>
+    </div>
+  </div>
+  <div lang="en">
+    <h1>Privacy Policy</h1>
+    <div class="hero-meta">
+      <span><span class="dot"></span> Last updated: March 7, 2026</span>
+      <span><span class="dot"></span> Version 1.0</span>
+      <span><span class="dot"></span> Next review: March 2027</span>
+    </div>
+  </div>
+</div>
+
+<!-- Layout -->
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav lang="es">
+      <a href="#about">Sobre nosotros</a>
+      <a href="#data-collected">Datos que recopilamos</a>
+      <a href="#data-usage">Uso de datos</a>
+      <a href="#data-storage">Almacenamiento</a>
+      <a href="#third-parties">Terceros</a>
+      <a href="#instagram-api">Instagram API</a>
+      <a href="#user-rights">Derechos RGPD</a>
+      <a href="#data-deletion">Eliminacion de datos</a>
+      <a href="#contact">Contacto</a>
+      <a href="#updates">Cambios</a>
+    </nav>
+    <nav lang="en">
+      <a href="#about">About us</a>
+      <a href="#data-collected">Data we collect</a>
+      <a href="#data-usage">Data usage</a>
+      <a href="#data-storage">Storage</a>
+      <a href="#third-parties">Third parties</a>
+      <a href="#instagram-api">Instagram API</a>
+      <a href="#user-rights">GDPR rights</a>
+      <a href="#data-deletion">Data deletion</a>
+      <a href="#contact">Contact</a>
+      <a href="#updates">Changes</a>
+    </nav>
+  </aside>
+
+  <!-- Content -->
+  <main class="content">
+
+    <!-- SPANISH -->
+    <div lang="es">
+
+      <!-- About -->
+      <section id="about">
+        <span class="badge">Empresa</span>
+        <h2>Sobre nosotros</h2>
+        <p>Esta Politica de Privacidad describe como <strong>t10 Solutions SL</strong>, que opera bajo la marca comercial <strong>Syntra AI</strong>, recopila, utiliza y protege la informacion personal de los usuarios que interactuan con nuestros servicios a traves de Instagram y otras plataformas de Meta.</p>
+        <div class="highlight-box">
+          <p><strong>Razon social:</strong> t10 Solutions SL</p>
+          <p><strong>Marca comercial:</strong> Syntra AI</p>
+          <p><strong>Sitio web:</strong> <a href="https://syntra.ai">syntra.ai</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/syntra.automation">@syntra.automation</a></p>
+          <p><strong>Ubicacion:</strong> Valencia, Espana</p>
+          <p><strong>Contacto:</strong> <a href="mailto:hello@syntra.ai">hello@syntra.ai</a></p>
+        </div>
+        <p>Syntra AI es un servicio de automatizacion con inteligencia artificial para pequenas y medianas empresas en Espana. Nuestro producto ayuda a negocios a gestionar citas, responder consultas y comunicarse con sus clientes de forma automatizada a traves de Instagram, WhatsApp y llamadas telefonicas.</p>
+      </section>
+
+      <!-- Data Collected -->
+      <section id="data-collected">
+        <span class="badge">Recopilacion</span>
+        <h2>Datos que recopilamos</h2>
+
+        <h3>Datos que SI recopilamos</h3>
+        <p>Cuando interactuas con nuestro contenido en Instagram, podemos recopilar:</p>
+        <table class="data-table">
+          <thead>
+            <tr><th>Dato</th><th>Fuente</th><th>Proposito</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Instagram User ID</td><td>Instagram Graph API</td><td>Identificacion unica del usuario</td></tr>
+            <tr><td>Nombre de usuario (@handle)</td><td>Instagram Graph API</td><td>Comunicacion y seguimiento</td></tr>
+            <tr><td>Texto de comentarios publicos</td><td>Instagram Graph API</td><td>Deteccion de interes en demo</td></tr>
+            <tr><td>ID del post comentado</td><td>Instagram Graph API</td><td>Contexto de la interaccion</td></tr>
+            <tr><td>Fecha y hora de interaccion</td><td>Instagram Graph API</td><td>Registro temporal</td></tr>
+            <tr><td>Idioma detectado</td><td>Analisis automatico del texto</td><td>Respuesta en el idioma correcto</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Datos que NO recopilamos</h3>
+        <ul>
+          <li><strong>Email personal</strong> de usuarios de Instagram</li>
+          <li><strong>Contrasenas</strong> de ninguna plataforma</li>
+          <li><strong>Mensajes directos (DM)</strong> no iniciados por el usuario</li>
+          <li><strong>Datos de pago</strong> o tarjetas de credito</li>
+          <li><strong>Geolocalizacion</strong> precisa de los usuarios</li>
+          <li><strong>Datos biometricos</strong> o fotografias faciales</li>
+          <li><strong>Datos de menores</strong> de 16 anos de forma consciente</li>
+        </ul>
+      </section>
+
+      <!-- Data Usage -->
+      <section id="data-usage">
+        <span class="badge">Uso</span>
+        <h2>Como utilizamos los datos</h2>
+        <p>Los datos recopilados se utilizan exclusivamente para:</p>
+        <ol>
+          <li><strong>Responder automaticamente</strong> a solicitudes de demostracion de nuestro producto cuando un usuario comenta palabras clave como "DEMO" en nuestras publicaciones.</li>
+          <li><strong>Cualificar leads B2B</strong> identificando el tipo de negocio del usuario interesado (salon de belleza, clinica dental, escuela deportiva, etc.).</li>
+          <li><strong>Mejorar nuestro servicio</strong> analizando metricas agregadas y anonimizadas de rendimiento de contenido.</li>
+          <li><strong>Comunicarnos con usuarios</strong> que han solicitado activamente informacion sobre nuestros servicios.</li>
+        </ol>
+        <div class="highlight-box">
+          <p><strong>Importante:</strong> Solo nos comunicamos con usuarios que han iniciado la interaccion comentando en nuestras publicaciones. Nunca enviamos mensajes no solicitados.</p>
+        </div>
+      </section>
+
+      <!-- Data Storage -->
+      <section id="data-storage">
+        <span class="badge">Seguridad</span>
+        <h2>Almacenamiento y seguridad</h2>
+        <ul>
+          <li>Los datos se almacenan en servidores protegidos ubicados en la Union Europea.</li>
+          <li>El acceso a los datos esta restringido al personal autorizado de t10 Solutions SL.</li>
+          <li>Utilizamos conexiones cifradas (HTTPS/TLS) para todas las comunicaciones.</li>
+          <li>Las bases de datos estan protegidas con autenticacion y cifrado.</li>
+          <li>Los datos de leads se conservan un <strong>maximo de 12 meses</strong> desde la ultima interaccion.</li>
+          <li>Los datos anonimizados de analitica pueden conservarse indefinidamente.</li>
+        </ul>
+      </section>
+
+      <!-- Third Parties -->
+      <section id="third-parties">
+        <span class="badge">Terceros</span>
+        <h2>Terceros</h2>
+        <p><strong>No vendemos, alquilamos ni compartimos datos personales con terceros</strong> con fines comerciales o publicitarios.</p>
+        <p>Los unicos terceros con acceso limitado a datos son:</p>
+        <table class="data-table">
+          <thead><tr><th>Servicio</th><th>Proposito</th><th>Datos compartidos</th></tr></thead>
+          <tbody>
+            <tr><td>Meta (Instagram Graph API)</td><td>Lectura de comentarios y respuesta automatica</td><td>Segun la API de Meta</td></tr>
+            <tr><td>Proveedor de hosting (UE)</td><td>Almacenamiento de base de datos</td><td>Datos cifrados en transito y reposo</td></tr>
+            <tr><td>Telegram Bot API</td><td>Alertas internas al equipo</td><td>Notificaciones anonimizadas</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Instagram API -->
+      <section id="instagram-api">
+        <span class="badge">Meta Platform</span>
+        <h2>Uso de Instagram API</h2>
+        <p>Syntra AI utiliza la <strong>Instagram Graph API</strong> (version 25.0) de Meta Platforms, Inc. conforme a las siguientes condiciones:</p>
+        <ul>
+          <li>Los datos obtenidos a traves de la API se utilizan <strong>unicamente</strong> dentro del alcance permitido por la <a href="https://developers.facebook.com/policy/">Meta Platform Policy</a>.</li>
+          <li><strong>No utilizamos</strong> los datos para fines publicitarios o de retargeting.</li>
+          <li><strong>No realizamos</strong> scraping, rastreo automatico masivo ni recopilacion indiscriminada de datos.</li>
+          <li>Respetamos todos los <strong>limites de velocidad</strong> (rate limits) establecidos por Meta.</li>
+          <li>Los permisos de API solicitados son los minimos necesarios para el funcionamiento del servicio.</li>
+        </ul>
+        <h3>Permisos de API utilizados</h3>
+        <table class="data-table">
+          <thead><tr><th>Permiso</th><th>Proposito</th></tr></thead>
+          <tbody>
+            <tr><td>instagram_basic</td><td>Lectura de perfil e informacion basica de la cuenta</td></tr>
+            <tr><td>instagram_manage_comments</td><td>Lectura y respuesta a comentarios en publicaciones</td></tr>
+            <tr><td>instagram_manage_insights</td><td>Lectura de metricas de rendimiento de publicaciones</td></tr>
+            <tr><td>instagram_content_publish</td><td>Publicacion de contenido programado</td></tr>
+            <tr><td>instagram_manage_messages</td><td>Envio de respuestas automaticas por mensaje directo a usuarios que solicitan informacion</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- User Rights -->
+      <section id="user-rights">
+        <span class="badge">RGPD</span>
+        <h2>Tus derechos (RGPD / LOPD-GDD)</h2>
+        <p>De acuerdo con el Reglamento General de Proteccion de Datos (RGPD) de la Union Europea y la Ley Organica de Proteccion de Datos y Garantia de Derechos Digitales (LOPD-GDD) de Espana, tienes derecho a:</p>
+        <ul>
+          <li><strong>Derecho de acceso:</strong> Solicitar una copia de los datos personales que tenemos sobre ti.</li>
+          <li><strong>Derecho de rectificacion:</strong> Solicitar la correccion de datos personales inexactos.</li>
+          <li><strong>Derecho de supresion:</strong> Solicitar la eliminacion de tus datos personales.</li>
+          <li><strong>Derecho de limitacion:</strong> Solicitar la limitacion del tratamiento de tus datos.</li>
+          <li><strong>Derecho de portabilidad:</strong> Recibir tus datos en un formato estructurado y legible por maquina.</li>
+          <li><strong>Derecho de oposicion:</strong> Oponerte al tratamiento de tus datos personales.</li>
+        </ul>
+        <div class="highlight-box contact">
+          <p><strong>Para ejercer cualquiera de estos derechos:</strong></p>
+          <p>Envia un email a <a href="mailto:hello@syntra.ai">hello@syntra.ai</a> con el asunto "Solicitud RGPD" indicando tu nombre de usuario de Instagram y el derecho que deseas ejercer.</p>
+          <p><strong>Plazo de respuesta:</strong> 30 dias naturales desde la recepcion de la solicitud.</p>
+        </div>
+        <p>Si consideras que el tratamiento de tus datos no es adecuado, puedes presentar una reclamacion ante la <strong>Agencia Espanola de Proteccion de Datos (AEPD)</strong> en <a href="https://www.aepd.es">www.aepd.es</a>.</p>
+      </section>
+
+      <!-- Data Deletion -->
+      <section id="data-deletion">
+        <span class="badge">Eliminacion</span>
+        <h2>Eliminacion de datos</h2>
+        <p>Puedes solicitar la eliminacion completa de tus datos en cualquier momento:</p>
+        <ol>
+          <li>Envia un email a <a href="mailto:hello@syntra.ai">hello@syntra.ai</a> con el asunto <strong>"Solicitud de eliminacion de datos"</strong>.</li>
+          <li>Incluye tu <strong>nombre de usuario de Instagram</strong> para que podamos localizar tus datos.</li>
+          <li>Procesaremos tu solicitud en un plazo maximo de <strong>30 dias</strong>.</li>
+          <li>Recibiras una confirmacion por email cuando los datos hayan sido eliminados.</li>
+        </ol>
+        <p>Los datos seran eliminados de todas nuestras bases de datos activas. Las copias en backups cifrados se eliminaran dentro del ciclo de rotacion de backups (maximo 90 dias).</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <span class="badge">Contacto</span>
+        <h2>Contacto</h2>
+        <div class="highlight-box contact">
+          <p><strong>t10 Solutions SL</strong> (Syntra AI)</p>
+          <p>Email: <a href="mailto:hello@syntra.ai">hello@syntra.ai</a></p>
+          <p>Web: <a href="https://syntra.ai">syntra.ai</a></p>
+          <p>Instagram: <a href="https://instagram.com/syntra.automation">@syntra.automation</a></p>
+          <p>Ubicacion: Valencia, Espana</p>
+        </div>
+        <p>Para consultas relacionadas con la proteccion de datos, por favor utiliza el asunto "Proteccion de datos" en tu email.</p>
+      </section>
+
+      <!-- Updates -->
+      <section id="updates">
+        <span class="badge">Actualizaciones</span>
+        <h2>Cambios en esta politica</h2>
+        <p>Nos reservamos el derecho de actualizar esta Politica de Privacidad en cualquier momento. Los cambios significativos seran comunicados a traves de nuestro perfil de Instagram o por email a los usuarios afectados.</p>
+        <p>La fecha de "ultima actualizacion" al inicio del documento refleja la fecha del cambio mas reciente.</p>
+        <table class="data-table">
+          <thead><tr><th>Version</th><th>Fecha</th><th>Cambios</th></tr></thead>
+          <tbody>
+            <tr><td>1.0</td><td>7 marzo 2026</td><td>Version inicial</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div lang="en">
+
+      <section id="about">
+        <span class="badge">Company</span>
+        <h2>About Us</h2>
+        <p>This Privacy Policy describes how <strong>t10 Solutions SL</strong>, operating under the trade name <strong>Syntra AI</strong>, collects, uses, and protects personal information of users who interact with our services through Instagram and other Meta platforms.</p>
+        <div class="highlight-box">
+          <p><strong>Legal entity:</strong> t10 Solutions SL</p>
+          <p><strong>Trade name:</strong> Syntra AI</p>
+          <p><strong>Website:</strong> <a href="https://syntra.ai">syntra.ai</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/syntra.automation">@syntra.automation</a></p>
+          <p><strong>Location:</strong> Valencia, Spain</p>
+          <p><strong>Contact:</strong> <a href="mailto:hello@syntra.ai">hello@syntra.ai</a></p>
+        </div>
+        <p>Syntra AI is an artificial intelligence automation service for small and medium businesses in Spain. Our product helps businesses manage appointments, respond to inquiries, and communicate with their customers automatically through Instagram, WhatsApp, and phone calls.</p>
+      </section>
+
+      <section id="data-collected">
+        <span class="badge">Collection</span>
+        <h2>Data We Collect</h2>
+
+        <h3>Data we DO collect</h3>
+        <p>When you interact with our content on Instagram, we may collect:</p>
+        <table class="data-table">
+          <thead><tr><th>Data</th><th>Source</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Instagram User ID</td><td>Instagram Graph API</td><td>Unique user identification</td></tr>
+            <tr><td>Username (@handle)</td><td>Instagram Graph API</td><td>Communication and tracking</td></tr>
+            <tr><td>Public comment text</td><td>Instagram Graph API</td><td>Demo interest detection</td></tr>
+            <tr><td>Commented post ID</td><td>Instagram Graph API</td><td>Interaction context</td></tr>
+            <tr><td>Interaction timestamp</td><td>Instagram Graph API</td><td>Temporal record</td></tr>
+            <tr><td>Detected language</td><td>Automated text analysis</td><td>Respond in the correct language</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Data we do NOT collect</h3>
+        <ul>
+          <li><strong>Personal email</strong> of Instagram users</li>
+          <li><strong>Passwords</strong> of any platform</li>
+          <li><strong>Direct messages (DM)</strong> not initiated by the user</li>
+          <li><strong>Payment data</strong> or credit card information</li>
+          <li><strong>Precise geolocation</strong> of users</li>
+          <li><strong>Biometric data</strong> or facial photographs</li>
+          <li><strong>Data from minors</strong> under 16 years of age knowingly</li>
+        </ul>
+      </section>
+
+      <section id="data-usage">
+        <span class="badge">Usage</span>
+        <h2>How We Use Data</h2>
+        <p>The collected data is used exclusively for:</p>
+        <ol>
+          <li><strong>Automatically responding</strong> to product demo requests when a user comments keywords such as "DEMO" on our posts.</li>
+          <li><strong>Qualifying B2B leads</strong> by identifying the type of business of the interested user (beauty salon, dental clinic, sports school, etc.).</li>
+          <li><strong>Improving our service</strong> by analyzing aggregated and anonymized content performance metrics.</li>
+          <li><strong>Communicating with users</strong> who have actively requested information about our services.</li>
+        </ol>
+        <div class="highlight-box">
+          <p><strong>Important:</strong> We only communicate with users who have initiated the interaction by commenting on our posts. We never send unsolicited messages.</p>
+        </div>
+      </section>
+
+      <section id="data-storage">
+        <span class="badge">Security</span>
+        <h2>Storage and Security</h2>
+        <ul>
+          <li>Data is stored on protected servers located in the European Union.</li>
+          <li>Data access is restricted to authorized personnel of t10 Solutions SL.</li>
+          <li>We use encrypted connections (HTTPS/TLS) for all communications.</li>
+          <li>Databases are protected with authentication and encryption.</li>
+          <li>Lead data is retained for a <strong>maximum of 12 months</strong> from the last interaction.</li>
+          <li>Anonymized analytics data may be retained indefinitely.</li>
+        </ul>
+      </section>
+
+      <section id="third-parties">
+        <span class="badge">Third Parties</span>
+        <h2>Third Parties</h2>
+        <p><strong>We do not sell, rent, or share personal data with third parties</strong> for commercial or advertising purposes.</p>
+        <p>The only third parties with limited data access are:</p>
+        <table class="data-table">
+          <thead><tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr></thead>
+          <tbody>
+            <tr><td>Meta (Instagram Graph API)</td><td>Reading comments and automated response</td><td>As per Meta API</td></tr>
+            <tr><td>Hosting provider (EU)</td><td>Database storage</td><td>Encrypted data in transit and at rest</td></tr>
+            <tr><td>Telegram Bot API</td><td>Internal team alerts</td><td>Anonymized notifications</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="instagram-api">
+        <span class="badge">Meta Platform</span>
+        <h2>Instagram API Usage</h2>
+        <p>Syntra AI uses the <strong>Instagram Graph API</strong> (version 25.0) from Meta Platforms, Inc. under the following conditions:</p>
+        <ul>
+          <li>Data obtained through the API is used <strong>solely</strong> within the scope permitted by the <a href="https://developers.facebook.com/policy/">Meta Platform Policy</a>.</li>
+          <li>We <strong>do not use</strong> data for advertising or retargeting purposes.</li>
+          <li>We <strong>do not perform</strong> scraping, mass automated crawling, or indiscriminate data collection.</li>
+          <li>We respect all <strong>rate limits</strong> established by Meta.</li>
+          <li>The API permissions requested are the minimum necessary for service operation.</li>
+        </ul>
+        <h3>API permissions used</h3>
+        <table class="data-table">
+          <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>instagram_basic</td><td>Read profile and basic account information</td></tr>
+            <tr><td>instagram_manage_comments</td><td>Read and reply to comments on posts</td></tr>
+            <tr><td>instagram_manage_insights</td><td>Read post performance metrics</td></tr>
+            <tr><td>instagram_content_publish</td><td>Publish scheduled content</td></tr>
+            <tr><td>instagram_manage_messages</td><td>Send automated direct message responses to users who request information</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="user-rights">
+        <span class="badge">GDPR</span>
+        <h2>Your Rights (GDPR)</h2>
+        <p>In accordance with the General Data Protection Regulation (GDPR) of the European Union and the Spanish Organic Law on Data Protection (LOPD-GDD), you have the right to:</p>
+        <ul>
+          <li><strong>Right of access:</strong> Request a copy of the personal data we hold about you.</li>
+          <li><strong>Right to rectification:</strong> Request correction of inaccurate personal data.</li>
+          <li><strong>Right to erasure:</strong> Request deletion of your personal data.</li>
+          <li><strong>Right to restriction:</strong> Request restriction of processing of your data.</li>
+          <li><strong>Right to portability:</strong> Receive your data in a structured, machine-readable format.</li>
+          <li><strong>Right to object:</strong> Object to the processing of your personal data.</li>
+        </ul>
+        <div class="highlight-box contact">
+          <p><strong>To exercise any of these rights:</strong></p>
+          <p>Send an email to <a href="mailto:hello@syntra.ai">hello@syntra.ai</a> with the subject "GDPR Request" indicating your Instagram username and the right you wish to exercise.</p>
+          <p><strong>Response time:</strong> 30 calendar days from receipt of the request.</p>
+        </div>
+        <p>If you believe your data is not being handled appropriately, you may file a complaint with the <strong>Spanish Data Protection Agency (AEPD)</strong> at <a href="https://www.aepd.es">www.aepd.es</a>.</p>
+      </section>
+
+      <section id="data-deletion">
+        <span class="badge">Deletion</span>
+        <h2>Data Deletion</h2>
+        <p>You can request complete deletion of your data at any time:</p>
+        <ol>
+          <li>Send an email to <a href="mailto:hello@syntra.ai">hello@syntra.ai</a> with the subject <strong>"Data deletion request"</strong>.</li>
+          <li>Include your <strong>Instagram username</strong> so we can locate your data.</li>
+          <li>We will process your request within a maximum of <strong>30 days</strong>.</li>
+          <li>You will receive an email confirmation when the data has been deleted.</li>
+        </ol>
+        <p>Data will be removed from all active databases. Copies in encrypted backups will be removed within the backup rotation cycle (maximum 90 days).</p>
+      </section>
+
+      <section id="contact">
+        <span class="badge">Contact</span>
+        <h2>Contact</h2>
+        <div class="highlight-box contact">
+          <p><strong>t10 Solutions SL</strong> (Syntra AI)</p>
+          <p>Email: <a href="mailto:hello@syntra.ai">hello@syntra.ai</a></p>
+          <p>Web: <a href="https://syntra.ai">syntra.ai</a></p>
+          <p>Instagram: <a href="https://instagram.com/syntra.automation">@syntra.automation</a></p>
+          <p>Location: Valencia, Spain</p>
+        </div>
+        <p>For data protection inquiries, please use the subject "Data Protection" in your email.</p>
+      </section>
+
+      <section id="updates">
+        <span class="badge">Updates</span>
+        <h2>Changes to This Policy</h2>
+        <p>We reserve the right to update this Privacy Policy at any time. Significant changes will be communicated through our Instagram profile or by email to affected users.</p>
+        <p>The "last updated" date at the top of this document reflects the date of the most recent change.</p>
+        <table class="data-table">
+          <thead><tr><th>Version</th><th>Date</th><th>Changes</th></tr></thead>
+          <tbody>
+            <tr><td>1.0</td><td>March 7, 2026</td><td>Initial version</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2026 t10 Solutions SL (Syntra AI). All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://syntra.ai">syntra.ai</a>
+    <a href="https://t10.tech">t10.tech</a>
+    <a href="mailto:hello@syntra.ai">hello@syntra.ai</a>
+  </div>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'en' ? 'en' : '';
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+
+  // Sidebar active state on scroll
+  const sections = document.querySelectorAll('.content section[id]');
+  const sidebarLinks = document.querySelectorAll('.sidebar a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        sidebarLinks.forEach(a => a.classList.remove('active'));
+        document.querySelectorAll(`.sidebar a[href="#${entry.target.id}"]`).forEach(a => a.classList.add('active'));
+      }
+    });
+  }, { rootMargin: '-80px 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
